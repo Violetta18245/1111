@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Disney Movies</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            Disney
+        </div>
+
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#tv">TV</a>
+            <a href="#characters">Characters</a>
+            <a href="#shop">Shop</a>
+        </nav>
+
+    </header>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="disney-text">Disney</p>
+
+            <h1>Rapunzel</h1>
+
+            <button onclick="showMovies()">
+                Movies
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="popular">
+
+        <div class="popular-images">
+
+            <img
+                src="https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/fab75458-dd2e-4861-8668-f591da4f61c4/600x900"
+                class="image-left"
+                alt="Encanto">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdTd1PuPu24Ao5kO4HA-6PempdgMdZi6ZgrT46JISyiHgLOpsBIigSn0&s=10"
+                class="image-middle"
+                alt="Frozen">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnatO44G1CuB3Fu7SoTBupJCiv5TjbanZctfpO6c_njw&s"
+                class="image-front"
+                alt="Moana">
+
+        </div>
+
+
+        <div class="popular-content">
+
+            <h2>Most Popular Movies</h2>
+
+            <p>
+                Discover the most popular Disney movies,
+                from magical adventures to unforgettable
+                animated stories.
+            </p>
+
+            <button onclick="showMovies()">
+                ▶ Movies
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="brands">
+
+        <div class="brand disney">
+            Disney
+        </div>
+
+        <div class="brand pixar">
+            PIXAR
+        </div>
+
+        <div class="brand marvel">
+            MARVEL
+        </div>
+
+        <div class="brand starwars">
+            STAR<br>WARS
+        </div>
+
+        <div class="brand national">
+            NATIONAL<br>
+            GEOGRAPHIC
+        </div>
+
+    </section>
+
+
+    <section class="movies" id="movies">
+
+        <h2>Most Popular Movies</h2>
+
+        <div class="movie-grid">
+
+            <div class="movie-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdTd1PuPu24Ao5kO4HA-6PempdgMdZi6ZgrT46JISyiHgLOpsBIigSn0&s=10"
+                    alt="Frozen">
+
+                <h3>Frozen</h3>
+
+                <p>Animation</p>
+
+            </div>
+
+
+            <div class="movie-card">
+
+                <img
+                    src="https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/fab75458-dd2e-4861-8668-f591da4f61c4/600x900"
+                    alt="Encanto">
+
+                <h3>Encanto</h3>
+
+                <p>Animation</p>
+
+            </div>
+
+
+            <div class="movie-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnatO44G1CuB3Fu7SoTBupJCiv5TjbanZctfpO6c_njw&s"
+                    alt="Moana">
+
+                <h3>Moana</h3>
+
+                <p>Adventure</p>
+
+            </div>
+
+
+            <div class="movie-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3k7v6_SktgQ-YpA9iFy2vHXNyQZaZ1GihhSyTYmEQkA&s=10"
+                    alt="Cars">
+
+                <h3>Cars</h3>
+
+                <p>Animation</p>
+
+            </div>
+
+
+            <div class="movie-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUimkwQRjwt1VPOeXQEAZqONifcJifjbICpaex6gE_OW0L7CrWBaIlp6c&s=10"
+                    alt="Toy Story">
+
+                <h3>Toy Story</h3>
+
+                <p>Adventure</p>
+
+            </div>
+
+
+            <div class="movie-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiFy94jATgGvc54kxA-avFKZo_eTvGxeE_0Ns66_km1A&s"
+                    alt="Inside Out">
+
+                <h3>Inside Out</h3>
+
+                <p>Animation</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="tv">
+
+        <h2>Disney TV</h2>
+
+        <p>Explore Disney TV shows and series.</p>
+
+    </section>
+
+
+    <!-- CHARACTERS -->
+
+    <section id="characters">
+
+        <h2>Disney Characters</h2>
+
+        <p>Discover your favorite Disney characters.</p>
+
+    </section>
+
+
+    <!-- SHOP -->
+
+    <section id="shop">
+
+        <h2>Disney Shop</h2>
+
+        <p>Explore Disney merchandise and collectibles.</p>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Disney Movies</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

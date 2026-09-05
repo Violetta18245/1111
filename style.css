@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+
+    background: #161522;
+
+    color: white;
+}
+
+
+.header {
+    height: 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 8%;
+
+    background: #171622;
+}
+
+.logo {
+    font-size: 28px;
+
+    font-family: cursive;
+}
+
+.navigation {
+    display: flex;
+
+    gap: 35px;
+}
+
+.navigation a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #cbb7e8;
+}
+
+
+.hero {
+    min-height: 650px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(20, 20, 30, 0.15),
+            rgba(20, 20, 30, 0.15)
+        ),
+        url("https://masterfresok.ru/upload/iblock/03f/qywxh80svms1f5at82fqnam6bslz72og.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.hero-content {
+    margin-top: -30px;
+}
+
+.disney-text {
+    font-family: cursive;
+
+    font-size: 30px;
+
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    font-size: 82px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+button {
+    border: none;
+
+    background: white;
+
+    color: #242331;
+
+    padding: 12px 55px;
+
+    border-radius: 30px;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 30px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+    background: #e9e5ef;
+}
+
+
+.popular {
+    min-height: 570px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 90px;
+
+    padding: 80px 8%;
+}
+
+
+
+.popular-images {
+    position: relative;
+
+    width: 430px;
+
+    height: 400px;
+}
+
+.popular-images img {
+    position: absolute;
+
+    width: 190px;
+
+    height: 290px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+.image-left {
+    left: 10px;
+
+    top: 40px;
+
+    transform: rotate(-12deg);
+}
+
+
+.image-middle {
+    right: 10px;
+
+    top: 40px;
+
+    transform: rotate(7deg);
+}
+
+
+.image-front {
+    left: 120px;
+
+    top: 100px;
+
+    z-index: 3;
+
+    transform: rotate(-2deg);
+}
+
+
+.popular-content {
+    max-width: 480px;
+}
+
+.popular-content h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+}
+
+.popular-content p {
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: #eeeeee;
+}
+
+.brands {
+    min-height: 150px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    padding: 30px 8%;
+
+    background: #171622;
+}
+
+.brand {
+    font-weight: bold;
+
+    font-size: 21px;
+
+    text-align: center;
+}
+
+.disney {
+    font-family: cursive;
+
+    font-size: 30px;
+}
+
+.pixar {
+    letter-spacing: 2px;
+}
+
+.marvel {
+    background: #d93636;
+
+    padding: 7px 12px;
+
+    font-family: Arial, sans-serif;
+}
+
+.starwars {
+    font-family: Arial, sans-serif;
+
+    border: 2px solid white;
+
+    padding: 4px 10px;
+
+    font-size: 14px;
+}
+
+.national {
+    color: #d9b82c;
+
+    border-left: 4px solid #d9b82c;
+
+    padding-left: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+}
+
+.movies {
+    padding: 60px 8% 100px;
+}
+
+.movies > h2 {
+    font-size: 38px;
+
+    margin-bottom: 35px;
+}
+
+
+
+.movie-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+
+.movie-card {
+    background: #211f2d;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    padding-bottom: 18px;
+
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+.movie-card img {
+    width: 100%;
+
+    height: 310px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.movie-card h3 {
+    font-size: 20px;
+
+    margin:
+        15px 15px 5px;
+}
+
+
+/* Жанр */
+
+.movie-card p {
+    color: #aaa;
+
+    margin-left: 15px;
+
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #0e0d15;
+
+    color: #aaa;
+}
+
+
+@media (max-width: 900px) {
+
+    .popular {
+        gap: 40px;
+
+        padding: 60px 5%;
+    }
+
+    .popular-images {
+        transform: scale(0.8);
+    }
+
+    .popular-content h2 {
+        font-size: 32px;
+    }
+
+    .movie-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .header {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .navigation {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+
+    .popular {
+        flex-direction: column;
+
+        padding: 70px 20px;
+
+        text-align: center;
+    }
+
+    .popular-images {
+        transform: scale(0.75);
+
+        margin-bottom: -40px;
+    }
+
+    .popular-content {
+        max-width: 100%;
+    }
+
+
+    .brands {
+        flex-wrap: wrap;
+
+        gap: 30px;
+    }
+
+
+    .movie-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .movies {
+        padding: 50px 20px;
+    }
+
+}
