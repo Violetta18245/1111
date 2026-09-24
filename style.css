@@ -455,5 +455,7 @@ footer {
     .movies {
         padding: 50px 20px;
     }
-
+ section {
+     padding: 20px ;
+ }
 }
